@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import EmployeeData from "./EmployeeData";
 import "./Employee.css";
 
 const Employee = () => {
+  const [contact, setContact] = useState(EmployeeData);
   return (
     <div className="employee">
-      <table className="emp_table" style={{ border: "2px solid black" }}>
+      <table style={{ border: "2px solid black" }}>
         <thead>
           <tr>
             <th>Name</th>
@@ -15,7 +16,7 @@ const Employee = () => {
           </tr>
         </thead>
         <tbody>
-          {EmployeeData.map((emp) => (
+          {contact.map((emp) => (
             <tr key={emp.Id} data={emp}>
               <td>{emp.Name}</td>
               <td>{emp.City}</td>

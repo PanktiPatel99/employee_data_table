@@ -1,4 +1,11 @@
-.emp_table {
+.employee {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+}
+
+table {
   margin: 10px auto;
   width: 95%;
   font-size: 20px;
@@ -10,4 +17,12 @@ th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
+}
+
+th {
+  background-color: #75858f;
+}
+
+td {
+  background-color: #b4c4cd;
 }
