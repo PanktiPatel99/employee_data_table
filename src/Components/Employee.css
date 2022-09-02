@@ -45,3 +45,7 @@ td {
 .editform * {
   font-size: 18px;
 }
+
+.margin-left {
+  margin-left: 8px;
+}
