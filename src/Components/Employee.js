@@ -106,6 +106,16 @@ const Employee = () => {
     setEditContactId(null);
   };
 
+  const handleDeleteClick = (contactId) => {
+    const newContacts = [...contact];
+
+    const index = contact.findIndex((contact) => contact.Id === contactId);
+
+    newContacts.splice(index, 1);
+
+    setContact(newContacts);
+  };
+
   return (
     <div className="employee">
       <form onSubmit={handleEditFormSubmit}>
@@ -133,6 +143,7 @@ const Employee = () => {
                   <ReadOnlyRow
                     contact={emp}
                     handleEditClick={handleEditClick}
+                    handleDeleteClick={handleDeleteClick}
                   />
                 )}
               </Fragment>
