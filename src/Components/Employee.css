@@ -15,7 +15,7 @@ table {
 td,
 th {
   border: 1px solid #dddddd;
-  text-align: left;
+  text-align: center;
   padding: 8px;
 }
 
@@ -44,6 +44,7 @@ td {
 
 .editform * {
   font-size: 18px;
+  text-align: center;
 }
 
 .margin-left {
