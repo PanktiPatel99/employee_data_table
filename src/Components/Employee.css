@@ -7,7 +7,7 @@
 
 table {
   margin: 10px auto;
-  width: 95%;
+  width: 100%;
   font-size: 20px;
   border-collapse: collapse;
 }
@@ -27,17 +27,21 @@ td {
   background-color: #b4c4cd;
 }
 
-form {
+.addform {
   display: flex;
   gap: 5px;
   margin: 0px auto;
 }
 
-form td:last-child {
+.addform td:last-child {
   display: flex;
   justify-content: space-evenly;
 }
 
-form * {
+.addform * {
   font-size: 20px;
+}
+
+.editform * {
+  font-size: 18px;
 }
